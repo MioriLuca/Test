@@ -14,7 +14,7 @@ angular.module('starter.controllers', [])
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
     $scope.modal.hide();
-  },
+  };
 
   // Open the login modal
   $scope.login = function() {
@@ -45,4 +45,14 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+    $scope.testo = "pippo";
+
+    $scope.click = function()
+    {
+        if($scope.testo == "click")
+            $scope.testo = "pippo";
+        else
+            $scope.testo = "click";
+    }
 })
+
